@@ -519,6 +519,27 @@ h1 {
   gap: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .controls-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .search-container {
+    max-width: 100%;
+    order: -1; /* Put search on top */
+  }
+  .filters-scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+  }
+  .view-mode-toggles {
+    align-self: flex-start;
+  }
+}
+
 /* Accent Monochrome Filter Buttons */
 .filters-scroll {
   display: flex;
@@ -2559,9 +2580,3 @@ body.light-theme .dt-checkbox:checked + .dt-checkbox-box svg {
 }
 
 
- . e m p t y - s t a t e - c a t   { 
-     m a r g i n :   0   a u t o   1 . 5 r e m   a u t o ; 
-     b o r d e r - r a d i u s :   1 2 p x ; 
-     o b j e c t - f i t :   c o n t a i n ; 
- }  
- 
