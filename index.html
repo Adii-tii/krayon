@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Fullstack Developer Learning Pathway — Interactive Roadmap</title>
+  <meta name="description" content="Explore a structured developer pathway covering Git/GitHub, Frontend engineering, Backend architecture, DevOps & Cloud deployment in a dark theme.">
+  <meta name="keywords" content="fullstack developer roadmap, web development pathway, developer curriculum, learn git frontend backend devops">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+  <!-- App Wrapper -->
+  <div class="layout-wrapper">
+    
+    <!-- Global Navigation -->
+    <nav class="global-nav">
+      <div class="nav-left">
+        <span class="logo-text">krayon</span>
+      </div>
+      <div class="nav-right">
+        <!-- User greeting removed from nav -->
+        <!-- Theme toggle -->
+        <div class="theme-toggle-slide" id="theme-toggle" role="button" tabindex="0">
+          <div class="theme-slider"></div>
+          <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+          <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Header -->
+    <header>
+      <h1 id="main-hero-header">Building is an art and we're builders.</h1>
+
+      <!-- Controls & Views Filters -->
+      <div class="controls-bar">
+        <div class="filters-scroll" id="track-filters">
+          <!-- Dynamically populated -->
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <input type="text" id="search-input" placeholder="Search topics..." autocomplete="off" aria-label="Search learning topics">
+            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <button id="clear-search" class="clear-search-btn opacity-0" title="Clear search" aria-label="Clear search">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- View mode toggles -->
+        <div class="view-mode-toggles">
+          <button id="view-cards" class="view-mode-btn active" title="Card view" aria-label="Switch to card view">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 14a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 14a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+            </svg>
+          </button>
+          <button id="view-chart" class="view-mode-btn" title="Roadmap chart view" aria-label="Switch to chart view">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="content-area">
+      <!-- Injected by JavaScript based on active view -->
+    </main>
+
+  </div>
+
+  <!-- Name Onboarding Modal -->
+  <div id="name-modal-overlay" class="name-modal-overlay">
+    <div class="name-modal">
+      <div class="name-modal-header">
+        <span class="name-modal-logo">pathway.</span>
+      </div>
+      <h2>what's your name?</h2>
+      <p>We'll use it to personalise your learning experience. Stored only in your browser.</p>
+      <form id="name-form" class="name-form" autocomplete="off">
+        <input
+          type="text"
+          id="name-input"
+          class="name-input"
+          placeholder="type your name..."
+          maxlength="32"
+          autofocus
+          aria-label="Your name"
+        >
+        <button type="submit" class="name-submit-btn" id="name-submit">
+          <span>Let's go</span>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

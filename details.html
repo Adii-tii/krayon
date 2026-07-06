@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Details — Fullstack Pathway</title>
+  <meta name="description" content="Explore the detailed curriculum, topics, and your progress for this learning track.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="layout-wrapper">
+
+    <!-- Global Navigation -->
+    <nav class="global-nav">
+      <div class="nav-left">
+        <a href="index.html" class="logo-link">
+          <span class="logo-text">krayon</span>
+        </a>
+      </div>
+      <div class="nav-right">
+        <!-- Theme toggle -->
+        <div class="theme-toggle-slide" id="theme-toggle" role="button" tabindex="0">
+          <div class="theme-slider"></div>
+          <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+          <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Details root: JS injects everything here -->
+    <main class="dt-root" id="details-root"></main>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="details.js"></script>
+</body>
+</html>
