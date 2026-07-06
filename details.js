@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initTheme() {
-  const saved = safeStorage.getItem('pathway-theme') || 'dark';
+  const saved = safeStorage.getItem('pathway-theme') || 'light';
   document.body.classList.toggle('light-theme', saved === 'light');
 }
 
