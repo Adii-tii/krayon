@@ -64,7 +64,7 @@ function showGreeting(name) {
 
 // Theme Management
 function initTheme() {
-  const savedTheme = safeStorage.getItem('pathway-theme') || 'dark';
+  const savedTheme = safeStorage.getItem('pathway-theme') || 'light';
   if (savedTheme === 'light') {
     document.body.classList.add('light-theme');
   } else {
